@@ -1,33 +1,33 @@
 class Afk < Formula
   desc "Autonomous Flow Kit daemon and CLI"
   homepage "https://github.com/mooglest/afk"
-  version "0.0.7"
+  version "0.0.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/afk/releases/download/0.0.7/afk-macos-arm64.tar.gz"
-      sha256 "011306b9ee32ed632de1d065ed59257309bce4cb5116d4c581dc53192f08adb6"
+      url "https://github.com/mooglest/homebrew-afk/releases/download/0.0.8/afk-macos-arm64.tar.gz"
+      sha256 "803d066746ce915f7ddc91a8cf3e5897d8b8feca4b3e9214347ab5d4c406e941"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/afk/releases/download/0.0.7/afk-linux-arm64.tar.gz"
-      sha256 "60b892401285a4fd51f1c4e54a31f713307446351b4da4bf04cdbf225678874b"
+      url "https://github.com/mooglest/homebrew-afk/releases/download/0.0.8/afk-linux-arm64.tar.gz"
+      sha256 "8d0fc2fe4cb1fb70f875913fd9c3fde06f14ab665a05fc1446498aa8cd26d902"
     else
-      url "https://github.com/mooglest/afk/releases/download/0.0.7/afk-linux-amd64.tar.gz"
-      sha256 "6949ac116777efcc5c2536b158466050dc594138534ff5efd4ddbfe97de39822"
+      url "https://github.com/mooglest/homebrew-afk/releases/download/0.0.8/afk-linux-amd64.tar.gz"
+      sha256 "a48bb31d1c78d6253099ac0f49a92794a12fb8da781eab4fc45628dba590aa5e"
     end
   end
 
   resource "afk-linux-amd64" do
-    url "https://github.com/mooglest/afk/releases/download/0.0.7/afk-linux-amd64.tar.gz"
-    sha256 "6949ac116777efcc5c2536b158466050dc594138534ff5efd4ddbfe97de39822"
+    url "https://github.com/mooglest/homebrew-afk/releases/download/0.0.8/afk-linux-amd64.tar.gz"
+    sha256 "a48bb31d1c78d6253099ac0f49a92794a12fb8da781eab4fc45628dba590aa5e"
   end
 
   resource "afk-linux-arm64" do
-    url "https://github.com/mooglest/afk/releases/download/0.0.7/afk-linux-arm64.tar.gz"
-    sha256 "60b892401285a4fd51f1c4e54a31f713307446351b4da4bf04cdbf225678874b"
+    url "https://github.com/mooglest/homebrew-afk/releases/download/0.0.8/afk-linux-arm64.tar.gz"
+    sha256 "8d0fc2fe4cb1fb70f875913fd9c3fde06f14ab665a05fc1446498aa8cd26d902"
   end
 
   def install
