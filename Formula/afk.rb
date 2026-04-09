@@ -1,33 +1,33 @@
 class Afk < Formula
   desc "Autonomous Flow Kit daemon and CLI"
   homepage "https://afk.mooglest.com"
-  version "0.0.60"
+  version "0.0.61"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.60/afk-macos-arm64.tar.gz"
-      sha256 "2b7702b18996c58df97ed4983f6cabbed89623e9dd75d993703ed242d5988b99"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.61/afk-macos-arm64.tar.gz"
+      sha256 "6ee1715bd813ab52c11d0073b92e39d6fc5e914c4f293cfd3fc89b22c07bae1c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.60/afk-linux-arm64.tar.gz"
-      sha256 "0ad87d5e6a674b5d06e3a0a52183b99a33fadba332e3a6ac34e01580e2e73c6f"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.61/afk-linux-arm64.tar.gz"
+      sha256 "294eb90f4a82b9d82d0e67f4d510c9854f3777b68d17ff7a3e106c662b8324b9"
     else
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.60/afk-linux-amd64.tar.gz"
-      sha256 "a42cd30cf0752118eca6d69bb8b38013e055bb7718b1b4e05e866c17cae3f2e2"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.61/afk-linux-amd64.tar.gz"
+      sha256 "465816ceef78e5219039d3dd8fcae066f65801f44818bf2130eb16b41af8b9e0"
     end
   end
 
   resource "afk-linux-amd64" do
-    url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.60/afk-linux-amd64.tar.gz"
-    sha256 "a42cd30cf0752118eca6d69bb8b38013e055bb7718b1b4e05e866c17cae3f2e2"
+    url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.61/afk-linux-amd64.tar.gz"
+    sha256 "465816ceef78e5219039d3dd8fcae066f65801f44818bf2130eb16b41af8b9e0"
   end
 
   resource "afk-linux-arm64" do
-    url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.60/afk-linux-arm64.tar.gz"
-    sha256 "0ad87d5e6a674b5d06e3a0a52183b99a33fadba332e3a6ac34e01580e2e73c6f"
+    url "https://github.com/mooglest/homebrew-tap/releases/download/0.0.61/afk-linux-arm64.tar.gz"
+    sha256 "294eb90f4a82b9d82d0e67f4d510c9854f3777b68d17ff7a3e106c662b8324b9"
   end
 
   def install
