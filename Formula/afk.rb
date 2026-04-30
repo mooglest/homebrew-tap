@@ -1,33 +1,33 @@
 class Afk < Formula
   desc "Autonomous Flow Kit daemon and CLI"
   homepage "https://afk.mooglest.com"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.2/afk-macos-arm64.tar.gz"
-      sha256 "fced26773a9ad798420e8dc2a1e29c1d8692b77e551a4206c6b382d7030753e5"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.3/afk-macos-arm64.tar.gz"
+      sha256 "b618b8465af0344199a3a10c79d55af3890f7c2607d0af594e982440f0a58965"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.2/afk-linux-arm64.tar.gz"
-      sha256 "73e95c8c10f36699b71d755db38f016eb0d9eb034d0ce487a8cc61e6cf032171"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.3/afk-linux-arm64.tar.gz"
+      sha256 "99b7cec83498b7a5b937c3b560a7f84eb7233ae4d6df25fbab01c2fb610d547d"
     else
-      url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.2/afk-linux-amd64.tar.gz"
-      sha256 "df436e2c3f9056ed0a12dd03d57db5f60a2c05954c05af734ad54d297f31fdf0"
+      url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.3/afk-linux-amd64.tar.gz"
+      sha256 "bb049d13edfd862719bc0590b8f7ae80fa09b73afc23ff87790ec019ac6bd200"
     end
   end
 
   resource "afk-linux-amd64" do
-    url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.2/afk-linux-amd64.tar.gz"
-    sha256 "df436e2c3f9056ed0a12dd03d57db5f60a2c05954c05af734ad54d297f31fdf0"
+    url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.3/afk-linux-amd64.tar.gz"
+    sha256 "bb049d13edfd862719bc0590b8f7ae80fa09b73afc23ff87790ec019ac6bd200"
   end
 
   resource "afk-linux-arm64" do
-    url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.2/afk-linux-arm64.tar.gz"
-    sha256 "73e95c8c10f36699b71d755db38f016eb0d9eb034d0ce487a8cc61e6cf032171"
+    url "https://github.com/mooglest/homebrew-tap/releases/download/0.2.3/afk-linux-arm64.tar.gz"
+    sha256 "99b7cec83498b7a5b937c3b560a7f84eb7233ae4d6df25fbab01c2fb610d547d"
   end
 
   def install
